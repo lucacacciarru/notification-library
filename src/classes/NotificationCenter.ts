@@ -22,19 +22,10 @@ export class NotificationCenter {
   channels: Channel = {};
   subscribers: CallbackContainer = {};
 
-  private static instance: NotificationCenter;
-
-  public static getIstance() {
-    if (!NotificationCenter.instance) {
-      NotificationCenter.instance = new NotificationCenter();
-    }
-    return NotificationCenter.instance;
-  }
-
-  addChannel(channelName: string, newUrl: Config) {
+  addChannel(channelName: string, url: Config) {
     this.channels = {
       ...this.channels,
-      [channelName]: newUrl,
+      [channelName]: url,
     };
     console.log('Canale aggiunto');
     return this.channels;
