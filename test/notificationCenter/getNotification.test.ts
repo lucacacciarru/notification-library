@@ -1,7 +1,7 @@
 import { NotificationCenter } from '../../src/classes/NotificationCenter';
 import fetchMock, { MockResponseInit } from 'jest-fetch-mock';
 
-const notificationCenter = NotificationCenter.getIstance();
+const notificationCenter = new NotificationCenter();
 const fakeFetchUrl = 'https://fake-server.com/';
 const channelName = 'channel';
 const notification = { title: 'notification1' };

@@ -2,7 +2,7 @@ import fetchMock, { MockResponseInit } from 'jest-fetch-mock';
 import { NotificationCenter } from '../../src/classes/NotificationCenter';
 import { NotificationSingle } from '../../src/classes/NotificationSingle';
 
-const notificationCenter = NotificationCenter.getIstance();
+const notificationCenter = new NotificationCenter();
 const fakeCreateUrl = 'https://fake-server.com/';
 const fakeReadUrl = 'https://fake-server.com/read/';
 const channelName = 'channel';

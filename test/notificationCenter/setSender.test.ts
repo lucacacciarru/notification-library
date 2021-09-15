@@ -1,7 +1,6 @@
 import { NotificationCenter } from '../../src/classes/NotificationCenter';
 
-const notificationCenter = NotificationCenter.getIstance();
-
+const notificationCenter = new NotificationCenter();
 describe('setSender', () => {
   test('Change sender', () => {
     const senderName = 'anyString';

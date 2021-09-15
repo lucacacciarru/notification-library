@@ -1,6 +1,6 @@
 import { NotificationCenter } from '../../src/classes/NotificationCenter';
 
-const notificationCenter = NotificationCenter.getIstance();
+const notificationCenter = new NotificationCenter();
 const channelName = 'default';
 const config = {
   fetchUrl: 'url',
